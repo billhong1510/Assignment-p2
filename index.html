@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="./JS/app.js"></script>
+  <title>note-ly</title>
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header class="header" id= "dark-mode">
+	        <nav class="navigation">
+                <ul class="a" style="list-style-type:none;">
+		            <li><a href=> Doc</a></li>
+		            <li><a href=> About</a></li>
+                    
+                    <label class="switch">
+                        <input type="checkbox"></input>
+                        <span class="slider"></span>
+                    </label>
+                    
+                </ul>
+            </nav>
+        </header>
+        <nav class="sidemenu" id= "dark-mode">
+            <h1> Saved notes </h1>
+            <ul>
+                <select id="notes" onchange="changeNote()">
+                    <option> saved notes one </option>
+                    <option> saved notes two </option>
+                    <option> saved notes three </option>
+                </select>
+            </ul>
+        </nav>
+        <div class="main" id ="dark-mode">
+            <div class="note">
+                <textarea id="editor" rows="10" cols="70" placeholder="Enter here for your note"></textarea>
+                <div class="buttons" >
+                    <button id="save" onclick="saveNote()"> save </button>
+                    <button id="delete" onclick="deleteNote()"> delete </button>
+                    <button id="new" onclick="newNote()"> new </button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="dark-mode">
+	        <p>created by or copyright or social media link footer</p>
+        </footer>
+    </div>
+</body>
+</html>
